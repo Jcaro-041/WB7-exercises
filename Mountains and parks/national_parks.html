@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Parks</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      #background-color {
+        background-color: rgb(216, 228, 238);
+      }
+      #good-text {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body id="background-color">
+    <main class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="homepage.html">
+            <img
+              src="Zip files/enjoy-the-outdoors/enjoy-the-outdoors-logo-zip-file/png/logo-black.png"
+              width="180px"
+              alt="Enjoy the Outdoors Logo"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="homepage.html"
+                ><h4>Home</h4></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="national_parks.html"
+                ><h4>National Parks</h4></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mountains.html"><h4>Mountains</h4></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <img
+        src="Zip files/enjoy-the-outdoors/images/yosemite.jpg"
+        class="banner-img img-fluid mb-5"
+        alt="image of Yosemite National Park"
+        id="banner-img"
+      />
+      <!-- this div handles centering all the text and elements below the banner image-->
+      <div style="text-align: center; margin-top: 20px">
+        <h1
+         id="good-text"
+        >
+          Explore what America has to offer through various National Parks that
+          are available to the public
+        </h1>
+
+        <h4
+          id="good-text"
+          class="mt-5"
+        >
+          Use the dropdown menus to filter and explore information about our
+          National Parks.
+        </h4>
+
+        <!--Div to make a row so the two drop downs will be side by side-->
+        <div class="row">
+          <!-- first column for the first drop down -->
+          <div class="col">
+            <select
+              id="park-type"
+              class="form-select w-50 mx-auto m-5"
+              onchange="filterParks()"
+            >
+              <option value="">All Types</option>
+            </select>
+          </div>
+          <!-- second column for the second drop down -->
+          <div class="col">
+            <select
+              id="park-state"
+              class="form-select w-50 mx-auto m-5"
+              onchange="filterParks()"
+            >
+              <option value="">All States</option>
+            </select>
+          </div>
+        </div>
+        <!--Below is the div that will be the container for the option tags to be filled with all the parks info-->
+        <div id="park-info-container" class="mt-4"></div>
+      </div>
+      <!--Footer for all the contact info and social medial links and such-->
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="footer-title">Contact Us</h3>
+              <p class="footer-info">123 Yuh Street, Phoenix, AZ</p>
+              <p class="footer-info">Phone: (123) 456-7890</p>
+              <p class="footer-info">Email: ong@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="footer-title">Follow Us</h3>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook">Facebook</i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram">Instagram</i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- All the scripts running after all the main html elements are loaded -->
+    <script src="Zip files/enjoy-the-outdoors/scripts/locationData.js"></script>
+    <script src="Zip files/enjoy-the-outdoors/scripts/nationalParkData.js"></script>
+    <script src="Zip files/enjoy-the-outdoors/scripts/parkTypeData.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style src="Zip files/enjoy-the-outdoors/styles/styles.css"></style>
+  </body>
+</html>

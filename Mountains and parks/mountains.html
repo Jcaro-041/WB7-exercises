@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountains Information</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      #background-color {
+        background-color: rgb(216, 228, 238);
+      }
+      #good-text {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body id="background-color">
+    <main class="container-fluid">
+      <!--NAVBAR BELOW-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="homepage.html">
+            <img
+              src="Zip files/enjoy-the-outdoors/enjoy-the-outdoors-logo-zip-file/png/logo-black.png"
+              width="180px"
+              alt="Enjoy the Outdoors Logo"
+            />
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="homepage.html"
+                ><h4>Home</h4></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="national_parks.html"
+                ><h4>National Parks</h4></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mountains.html"
+                ><h4>Mountains</h4></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <img
+          id="banner-img"
+          src="Zip files/enjoy-the-outdoors/images/beautiful-mountain-photo-l.jpg"
+          class="banner-img img-fluid"
+          alt="wide image of snowy mountains"
+        />
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <h1
+          id="good-text"
+          class="mb-5"
+        >
+          Scale the highest mountains on earth and learn about them here on this
+          page
+        </h1>
+        <h4
+          id="good-text"
+        >
+          Use the dropdown menu to explore information about mountains.
+        </h4>
+      </div>
+      <select
+        id="mountain-select"
+        class="form-select mt-5 mb-5 w-50 mx-auto"
+      ></select>
+      <p id="infoContainer"></p>
+
+      <!-- footer with socials and shtuff -->
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="footer-title">Contact Us</h3>
+              <p class="footer-info">123 Yuh Street, Phoenix, AZ</p>
+              <p class="footer-info">Phone: (123) 456-7890</p>
+              <p class="footer-info">Email: ong@gmail.com</p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="footer-title">Follow Us</h3>
+              <ul class="footer-social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook">Facebook</i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram">Instagram</i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="Zip files/enjoy-the-outdoors/scripts/mountainData.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
